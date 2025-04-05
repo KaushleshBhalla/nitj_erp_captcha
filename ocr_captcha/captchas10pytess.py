@@ -2,8 +2,8 @@ from PIL import Image
 import pytesseract
 import os
 
-image_folder = R"C:\Users\HP\Desktop\nitj_erp_captcha\captcha_100_requests\captchas100"
-output_file = R"C:\Users\HP\Desktop\nitj_erp_captcha\captcha_100_solutions.txt"
+image_folder = R"C:\Users\HP\Desktop\nitj_erp_captcha\captcha_100_requests\captchas10"
+output_file = R"C:\Users\HP\Desktop\nitj_erp_captcha\captcha_10_solutions.txt"
 
 
 with open(output_file, 'w') as f:

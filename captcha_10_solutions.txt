@@ -1,0 +1,10 @@
+captcha_1.jpg,133786
+captcha_10.jpg,142700
+captcha_2.jpg,728640
+captcha_3.jpg,175224
+captcha_4.jpg,705094
+captcha_5.jpg,127783
+captcha_6.jpg,155861
+captcha_7.jpg,840992
+captcha_8.jpg,494190
+captcha_9.jpg,103926
