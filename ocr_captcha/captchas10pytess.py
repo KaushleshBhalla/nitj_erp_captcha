@@ -21,4 +21,4 @@ with open(output_file, 'w') as f:
                 f.write(f"{filename},ERROR\n")
                 print(f"Error processing {filename}: {e}")
 
-print(f"\nOCR results saved to {output__file}")
+print(f"\nOCR results saved to {output_file}")
