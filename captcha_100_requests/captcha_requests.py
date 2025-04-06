@@ -22,5 +22,5 @@ for i in range(100):
         print('saved'+ file_name)
         #print(f"✅ Saved: {file_name}")  # Print success message
     else:
-        print("failed" + file_name)
+        print("failed " + file_name)
         #print(f"❌ Failed to download CAPTCHA {i+1}")  # Print error if failed
