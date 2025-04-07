@@ -1,0 +1,211 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ERP Login</title>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+		    <link rel="stylesheet" href="css/main.css">
+		    <link rel="stylesheet" href="css/responsive.css">
+
+		     <script src="js/jquery-3.2.1.min.js"></script>
+		     <script src="bootstrap/js/bootstrap.min.js"></script>
+    	<link rel="shortcut icon" href="images/favicon.ico" />
+
+
+      <style>
+        body {
+            background-color: #e9ecef;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            margin:auto;
+           
+        }
+
+        .login-header {
+    display: flex;
+    /* align-items: left; */
+    /* justify-content: center; */
+    /* margin: auto; */
+    text-align: center;
+}
+
+.login-heading {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    margin-left: 30px; /* Adds space between the image and text */
+    text-align: center;
+}
+
+img {
+    display: block;
+}
+        @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the div */
+.fade-in {
+    opacity: 0; /* Initial opacity */
+    animation: fadeIn 0.8s forwards; /* 2 seconds duration */
+}
+
+
+        </style>
+  </head>
+  <body >
+
+<div style="display:flex; flex-direction: column; min-height: 100vh;" >
+
+      <div class="container-fluid" style="background-color:#003A6A;width:100%">
+  <div class="row" style="background-color:#FECD0B; height:4px;"> </div>
+
+  <div class="container">
+    <div class="row">
+        <div class="col-md-8" style="padding-top:12px">
+            <div class="logo">
+                <a href="https://v1.nitj.ac.in/erp/user_home" title="NIT Jalandhar" rel="home">
+                    <img src="https://v1.nitj.ac.in/erp/Images/logo.png" alt="NIT Jalandhar"/>
+                </a>
+            </div> <!-- /.logo -->
+
+            <div class="logo2">
+                <a href="https://v1.nitj.ac.in/erp/user_home" title="NIT Jalandhar" rel="home">
+                    <img src="https://v1.nitj.ac.in/erp/Images/logo2.png" alt="NIT Jalandhar"/></a><br />
+                    <p style="width:100%; font-family:Times New Roman; letter-spacing:1px; font-size:22px; color:white; line-height:30px;">
+                      डॉ बी आर अम्बेडकर राष्ट्रीय प्रौद्योगिकी संस्थान, जालंधर<br />
+                      Dr B R Ambedkar National Institute of Technology, Jalandhar</p>
+
+            </div> <!-- Responsive .logo -->
+        </div> <!-- /.col-md-8 -->
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+<div class="container">
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <a class="navbar-brand" href="user_home" style="color:#F7DC6F; font-family:Trebuchet MS; font-size:22px;"  data-toggle="tooltip" data-placement="bottom" title="ERP Academic">| ERP - NITJ |</a>
+</div>
+<div class="collapse navbar-collapse" id="myNavbar">
+
+
+
+
+    
+</div>
+
+</div>
+</nav>
+  <div style="flex:1">
+  <div class="login-card" style="margin:auto;" >
+  <div class="login-header">
+    <img width="60px" src="Images/login_logo.png" alt="Login Logo" style="" />
+    <h1 class="login-heading" style="font-size: 26px; color:#003a6a; text-align: center;">NITJ ERP Login</h1>
+  </div>
+    <br /><br />
+            <form action="" method="post">
+                <div class="form-group">
+                  <label for="username">Username:</label>
+                  <input type="text" class="form-control" id="username" name="username" placeholder="Enter Username" value="">
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Password:</label>
+                  <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Enter Password">
+                </div>
+
+							
+
+                <div class="row">
+                  <div class="col-md-3">
+                  <!-- <label for="captcha">CAPTCHA:</label> -->
+                  <img  width="100px" src="images/captcha1.png" alt="CAPTCHA" >
+
+                  </div>
+                  <div class="form-group col-md-7">
+                    <img id="captchaImage" src="cap.php" alt="CAPTCHA Image" style="border-radius: 10px; border: 2px solid #Addaff;">
+                  </div>
+                </div>
+
+               
+                 <div class="row">
+                  <div class="col-md-12">
+                    <div class="input-group">
+                    <input type="text" placeholder="Enter Captcha Here" class="form-control" id="captcha" name="captcha" >
+                    <span onclick="refreshCaptcha()" class="input-group-addon glyphicon glyphicon-refresh"></span>
+                    </div>
+                </div>
+                
+               </div>
+
+
+               
+                <br>
+                  <div style="text-align:center">
+										<button type="submit" name="login" class="btn btn-primary" style="width:100%; border-radius: 10px; font-size:16px; font-weight: bold;">Login</button>
+									</div>
+									<br />
+                  <div style="text-align:right; margin-right:20px;">
+                  <label style="font-weight:normal; font-size:14px; ">
+                    <a style="color:#990000" href="forgot_password" >Forgot Password?</a>
+                  </label>
+                  </div>
+
+              </form>
+          </div>
+          </div>
+        
+
+
+
+
+<div class="container-fluid" style="background-color:#003A6A;width:100%;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p style="color:white; font-family:verdana; font-size:13px; text-align:center; padding:10px;">
+        Copyright 2025 © NIT Jalandhar<br />
+        Developed by: Computer Centre, Dr. B.R. Ambedkar National Institute of Technology, Jalandhar
+        </p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<script>
+        function refreshCaptcha() {
+            const captchaImage = document.getElementById('captchaImage');
+            captchaImage.src = 'cap.php?' + new Date().getTime(); 
+        }
+    </script>
+  </body>
+
+</html>
